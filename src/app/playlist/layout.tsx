@@ -1,26 +1,26 @@
 import localFont from 'next/font/local'
 
-import './globals.css'
+import '../globals.css'
 
 const gotham = localFont({
   src: [
     {
-      path: '../fonts/GothamLight.ttf',
+      path: '../../fonts/GothamLight.ttf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../fonts/GothamBook.ttf',
+      path: '../../fonts/GothamBook.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/GothamMedium.ttf',
+      path: '../../fonts/GothamMedium.ttf',
       weight: '500',
       style: 'normal',
     },
     {
-      path: '../fonts/GothamBold.ttf',
+      path: '../../fonts/GothamBold.ttf',
       weight: '700',
       style: 'normal',
     }
@@ -29,18 +29,14 @@ const gotham = localFont({
 })
 
 export const metadata = {
-  title: 'Spotify',
+  title: 'Playlist',
   description: 'Listen to music.',
 }
 
-export default function RootLayout({
+export default function PlaylistLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
 }) {
-  return (
-    <html lang="en">
-      <body className={`${gotham.variable} font-sans bg-zinc-900 text-zinc-50`}>{children}</body>
-    </html>
-  )
+  return <section>{children}</section>;
 }
