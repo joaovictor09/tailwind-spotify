@@ -39,7 +39,8 @@ Neste desafio foram abordados os seguintes temas:
 
 ## Funcionalidades
 
-- [x] Botão para alterar o tema de dark para light e vice versa;
+- [x] Home
+- [ ] Página das Playlists
 
 ---
 
